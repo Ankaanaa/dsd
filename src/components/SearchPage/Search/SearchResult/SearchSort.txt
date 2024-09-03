@@ -1,0 +1,44 @@
+		const SearchSort = SearchResultList.map((el: SearchResultInter) => {
+			const words = el.Atl.toLowerCase().split(/\s+/)
+			const namePost = el.name?.toLowerCase().split(' ')
+			const FilterSearch = words
+				.filter((word: any) => {
+					return word.includes(consumerValue.toLowerCase())
+				})
+				.filter((word: any) => {
+					if (!uniqueWords.has(word)) {
+						uniqueWords.add(word)
+						return true
+					}
+					return false
+				})
+			return {
+				id: el.id,
+				SearchText: FilterSearch,
+			}
+		}).filter((chav: any) => {
+			return chav.SearchText.length > 0
+		})
+	
+		// const ResultClick = (el: string) => {
+		// 	props.setIsSearchResult(false)
+		// 	props.dispatch(el)
+		// 	setConsumerValue(el)
+		// }
+	
+		const flattenedResult = SearchSort.flatMap((el: any) => {
+			return el.SearchText.map((word: string) => ({
+				id: Math.random() * 100,
+				text: word,
+			}))
+		}).map((el: any) => {
+			return (
+				<li
+					className='SearchResult__li'
+					onClick={() => ResultClick(el.text)}
+					key={el.id}
+				>
+					{el.text}
+				</li>
+			)
+		})

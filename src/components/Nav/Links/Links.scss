@@ -1,0 +1,27 @@
+
+.links {
+    background-color: transparent;
+    .links__body {
+        display: flex;
+        background-color: transparent;
+        align-items: center;
+        background-color: transparent;
+        
+    }
+}
+
+.links__svg {
+    height: 30px;
+    width: 30px;
+    color: #3F292B;
+    transition: all 1s ease;
+}
+
+.links__svg-s {
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    color: #3F292B;
+    transition: all 1s ease;
+}

@@ -1,0 +1,42 @@
+.homePost {
+    position: relative;
+    height: 100%;
+
+    .homePost__img {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(46, 45, 56);
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .homePost__icn {
+        width: 100%;
+        height: 100%;
+        transition: all 800ms ease;
+        cursor: pointer;
+        background-size: cover;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .homePost__text {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-height: 130px;
+        z-index: 33;
+        bottom: 0;
+        color: rgba(255, 255, 255, 0.923);
+        background-color: #2e0c3fce;
+        padding: 20px;
+        transition: all 400ms ease;
+        cursor: pointer;
+        
+        &:hover {
+            color: rgba(231, 231, 231, 0.858);
+        }
+    }
+}

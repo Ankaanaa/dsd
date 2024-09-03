@@ -1,0 +1,105 @@
+
+
+.link {
+    background-color: transparent;
+    .link__li {
+        transition: all 400ms ease;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        background-color: transparent;
+
+        &:hover {
+            cursor: pointer;
+            .link__span {
+                color: #ce9c6b;
+            }
+            .links__svg {
+                color: #ce9c6b;
+                transform: scale(1.2);
+                transform: translateX(110px);
+            }
+            .links__svg-4 {
+                transform: translateX(220px);
+            }
+            .links__svg-5 {
+                transform: translateX(180px);
+            }
+
+            .links__svg-s {
+                color: #ce9c6b;
+                transform: scale(1.2); 
+            }
+        }
+    }
+    .links__svg,.links__svg-4,.links__svg-5 {
+        background-color: transparent;
+    }
+
+    .link__span {
+        background-color: transparent;
+        margin-left: 5px;
+        color: #3F292B;
+        transition: all 0.4s ease;
+
+    }
+
+    .link__search {
+
+        margin-top: 250px;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 200px;
+    }
+    .NavLink__link {
+        color: #3F292B;
+        transition: all 400ms ease;
+
+        &:hover {
+            color: #ce9c6b;
+        }
+    }
+}
+
+.links__svg__small {
+    transition: all 400ms ease;
+    margin: 0 auto;
+}
+
+.link__input {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 100px;
+}
+
+.input_search {
+    position: relative;
+}
+.input__magnetic__glass {
+    position: absolute;
+    bottom: 8px;
+    left: 30px;
+}
+
+.link__modal-btn {
+    border: 1px solid #ce9c6b;
+    width: 120px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: all 400ms ease;
+
+    &:hover {
+        background-color: #ce9c6b;
+        color: white;
+        border: 1px solid #ce9c6b;
+    }
+}
