@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.sidebar.sidebar__collapse {
+    width: 100px; /* ширина в свернутом состоянии */
+    // height: 100%;
+    transition: all 400ms ease; 
+}
+.sidebar__title__icon.sidebar__collapse-title {
+    width: 100px !important;
+}
+.sidebar {
+    position: fixed;
+    width: 300px;
+    transition: all 400ms ease;
+    height: 100%;
+    border: 0.5px solid #a1a1a1;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    z-index: 100;
+    padding-bottom: 50px;
+    /* Цвет и ширина обводки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Эффект тени */
+
+    .sidebar__icon {
+        width: 70px;
+        height: 70px;
+    }
+    .sidebar__text {
+        background-color: transparent;
+    }
+
+    .sidebar__title {
+        background-color: transparent;
+    }
+    .sidebar__svg-down {
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        font-size: 100px;
+    }
+    .sidebar__svg-down-2 {
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+        font-size: 100px;
+    }
+
+    .sidebar__image {
+        width: 100%;
+    }
+    .svg-test {
+        position: absolute;
+        top: 60px;
+        font-size: 350px;
+        background-color: transparent;
+        color: #ce9c6b;
+        opacity: 0.3;
+        z-index: 0;
+        background-color: transparent;
+    }
+
+    .sidebar__title__icon {
+        width: 300px;
+        // height: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+    }
+    .sidebar__text {
+        margin-left: 10px;
+    }
+
+    .sidebar__name {
+        // margin-left: 50px;
+        color: #ce9c6b;
+        font-size: 40px;
+        background-color: transparent;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .sidebar__span {
+        background-color: transparent;
+        // padding-top: 50px;
+        margin-bottom: 30px;
+        // color: #1D1128;
+        color: #3F292B;
+        // color: #7B3E19;
+        font-size: 40px;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .sidebar__btn {
+        // border-radius: 50%;
+        background-color: transparent;
+        position: absolute;
+        right: -15px;
+        width: 33px;
+        height: 33px;
+        top: 40px;
+    }
+    .sidebar__svg {
+        font-size: 30px;
+        color: #ce9c6b;
+        transition: all 1s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #ad845c;
+        }
+    }
+    .sidebar__svg-toggle {
+        font-size: 30px;
+        color: #3F292B;
+        background-color: transparent;
+        transition: all 1s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #ce9c6b;
+        }
+    }
+    .sidebar__svg-text {
+        position: absolute;
+        left: -10px;
+        bottom: 35px;
+        color: #ce9c6b;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+    }
+    .sidebar__svg-text-2 {
+        position: absolute;
+        color: #ce9c6b;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        left: 15px;
+        bottom: -20px;
+    }
+
+}
+
+.svg__icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: none;
+}
+
+.icon {
+    width: 20px;
+}

@@ -1,0 +1,17 @@
+.SearchBlog {
+    width: 100%;
+    display: flex;
+    // border: 5px solid blue;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.SeacrhBlog__CantFind {
+    width: 600px;
+    height: 150px;
+    text-align: center;
+    margin:  0 auto;
+    color: black;
+    padding-top: 60px;
+    background-color: rgba(128, 128, 128, 0.447);
+}

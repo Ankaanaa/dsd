@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.518);
+    z-index: 999;
+    transition: all 400ms ease;
+
+    .modal__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .modal__name {
+        font-family: "Permanent Marker", cursive;
+        color: #ce9c6b;
+        font-size: 30px;
+    }
+    .modal__name-span {
+        color: #3F292B;
+        position: relative;
+        right: 10px;
+    }
+    .modal__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        max-width: 640px;
+        width: 100%;
+        height: 524px;
+        padding-top: 89px;
+        top: 50px;
+        transform: translateY(-50px);
+        transition: transform 350ms ease-in-out;
+    }
+    .modal__close-btn {
+        cursor: pointer;
+        position: absolute;
+        top: -8px;
+        color:#ce9c6b;   
+        font-size: 25px;
+        right: -7px;
+    }
+
+    .modal__input {
+        border: 1px solid black;
+        min-width: 400px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .modal__title {
+        margin-top: 25px;
+        font-weight: 800;
+        font-size: 33px;
+    }
+    .modal__text {
+        margin-top: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .modal__email {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+    } 
+    .modal__clue {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        min-width: 400px;
+    }
+    .modal__btn-email {
+        margin-top: 20px;
+        border: 1px solid #ce9c6b;
+        width: 400px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #ce9c6b;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        cursor: pointer;
+        transition: all 400ms ease;
+
+        &:hover {
+            background-color: white;
+            color: #ce9c6b;
+        }
+    }
+    .modal__login {
+        cursor: pointer;
+        border-bottom: 1px solid gray;
+    }
+    .modal__email__passport {
+        margin-top: 20px;
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        width: 400px;
+    }
+}
+
+.modal--entering,
+.modal--entered {
+    opacity: 1;
+}
+
+.modal--entered, .modal__content,
+.modal--entering .modal__content {
+    transform: translateY(0);
+}
+
+.modal--exiting,
+.modal--exited {
+    opacity: 0;
+}
+
+.modal--exited, .modal__content,
+.modal--exiting, .modal__content {
+    transform: translateY(-50px);
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal.active .modal__content {
+    // transform: translateY(0);
+    opacity: 1;
+  }
