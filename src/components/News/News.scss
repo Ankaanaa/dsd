@@ -1,0 +1,10 @@
+.News {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+
+    .News__column {
+        flex-basis: 23%;
+    }
+
+}
